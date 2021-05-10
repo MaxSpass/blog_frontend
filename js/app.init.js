@@ -14,25 +14,25 @@ const $registrationModal = $('#registration-popup');
 const $editPostModal = $('#edit-post-popup');
 const $createPostModal = $('#create-post-popup');
 
-const STORAGE_AUTH_KEY 				= 'auth';
-const STORAGE_ROLES_KEY 			= 'roles';
-const STORAGE_USERS_KEY 			= 'users';
-const STORAGE_TAGS_KEY 				= 'tags';
-const STORAGE_CATEGORIES_KEY 	= 'categories';
+const STORAGE_AUTH_KEY = 'auth';
+const STORAGE_ROLES_KEY = 'roles';
+const STORAGE_USERS_KEY = 'users';
+const STORAGE_TAGS_KEY = 'tags';
+const STORAGE_CATEGORIES_KEY = 'categories';
 
-const ACTION_FILTER_BY_ALL 		= 'filter_by_all';
-const ACTION_FILTER_BY_USER 	= 'filter_by_user';
-const ACTION_FILTER_BY_CAT 		= 'filter_by_cat';
-const ACTION_FILTER_BY_TAG 		= 'filter_by_tag';
-const ACTION_SORT_BY_RESET 		= 'sort_by_reset';
-const ACTION_SORT_BY_AZ 			= 'sort_by_az';
-const ACTION_SORT_BY_ZA 			= 'sort_by_za';
+const ACTION_FILTER_BY_ALL = 'filter_by_all';
+const ACTION_FILTER_BY_USER = 'filter_by_user';
+const ACTION_FILTER_BY_CAT = 'filter_by_cat';
+const ACTION_FILTER_BY_TAG = 'filter_by_tag';
+const ACTION_SORT_BY_RESET = 'sort_by_reset';
+const ACTION_SORT_BY_AZ = 'sort_by_az';
+const ACTION_SORT_BY_ZA = 'sort_by_za';
 
-const STORAGE_AUTH 				= sessionStorage.getItem(STORAGE_AUTH_KEY);
-const STORAGE_ROLES 			= sessionStorage.getItem(STORAGE_ROLES_KEY);
-const STORAGE_USERS 			= sessionStorage.getItem(STORAGE_USERS_KEY);
-const STORAGE_TAGS 				= sessionStorage.getItem(STORAGE_TAGS_KEY);
-const STORAGE_CATEGORIES 	= sessionStorage.getItem(STORAGE_CATEGORIES_KEY);
+const STORAGE_AUTH = sessionStorage.getItem(STORAGE_AUTH_KEY);
+const STORAGE_ROLES = sessionStorage.getItem(STORAGE_ROLES_KEY);
+const STORAGE_USERS = sessionStorage.getItem(STORAGE_USERS_KEY);
+const STORAGE_TAGS = sessionStorage.getItem(STORAGE_TAGS_KEY);
+const STORAGE_CATEGORIES = sessionStorage.getItem(STORAGE_CATEGORIES_KEY);
 
 const APP_DATA = {
 	_auth: JSON.parse(STORAGE_AUTH),
