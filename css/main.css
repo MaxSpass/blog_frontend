@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*POST*/
+.post-wrapper .card {
+    opacity: 1;
+    transition: opacity 1s linear;
+}
+.post-wrapper.editable .card {
+    opacity: .2;
+}
+.post-image {
+    min-width: 280px;
+    min-height: 160px;
+    overflow: hidden;
+}
+.post-src {
+    object-fit: cover;
+    background-size: cover;
+}
+.post-author {
+    display: block;
+    right: 0;
+    bottom: 0;
+    font-size: 10px;
+    background: #000;
+    color: #fff;
+    padding: 1px 3px;
+    user-select: none;
+    z-index: 1;
+}
+.post-title {
+    font-weight: 700;
+}
+.post-created {
+    bottom: 5px;
+    right: 5px;
+}
+.post-actions {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+.post-actions button {
+    width: 34px;
+    height: 34px;
+    background: #000;
+    border-radius: 50%;
+    transition: .3s ease;
+}
+.post-actions button:hover {
+    background: maroon;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+#block-main-actions svg {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    transition: .3s ease;
+}
+
+#block-filter svg:hover {
+    background-image: radial-gradient(farthest-corner at 40px 40px,
+    #f35 0%, #43e 100%);
+}
+
+#block-add-post svg:hover {
+    transform: rotate(180deg);
+}
